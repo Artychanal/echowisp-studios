@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-lang="page_title">EchoWisp Studios</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="body-glow">
+    <div class="glow-particles"></div>
+
+    <header class="hero observe-animate" data-lang="hero_section">
+      <div class="overlay"></div>
+      <div class="content">
+        <img src="img/logo.png" alt="EchoWisp Studios" class="logo" />
+        <h1 data-lang="main_headline">EchoWisp Studios</h1>
+        <p data-lang="main_tagline">
+          We forge immersive worlds and unforgettable gameplay
+        </p>
+        <button onclick="scrollToSection('about')" data-lang="btn_about">
+          About Us
+        </button>
+        <select id="language-switcher" onchange="switchLanguage()">
+          <option value="en">EN</option>
+          <option value="ua">UA</option>
+        </select>
+      </div>
+    </header>
+
+    <section id="about" class="section observe-animate">
+      <h2 data-lang="about_title">About EchoWisp Studios</h2>
+      <p data-lang="about_text">
+        We are a passionate team creating immersive worlds and unforgettable
+        gameplay.
+      </p>
+      <div class="slider-container">
+        <div class="slider-track">
+          <div class="slide observe-animate">
+            <h3 data-lang="about_strength_story">Immersive Storytelling</h3>
+            <p data-lang="about_strength_story_text">
+              We craft rich narratives that stay with players long after the
+              game ends.
+            </p>
+          </div>
+          <div class="slide observe-animate">
+            <h3 data-lang="about_strength_art">Distinctive Art Direction</h3>
+            <p data-lang="about_strength_art_text">
+              Our visuals speak for our worlds — unique, dark, and beautiful.
+            </p>
+          </div>
+          <div class="slide observe-animate">
+            <h3 data-lang="about_strength_tech">Solid Technical Foundation</h3>
+            <p data-lang="about_strength_tech_text">
+              We build stable and scalable systems ready for growth.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="project" class="section dark project-lore observe-animate">
+      <canvas id="projectCanvas"></canvas>
+      <div class="lore-container">
+        <h2 data-lang="project_title">Our Main Project</h2>
+        <p data-lang="project_text">
+          Echoes of Darkness is a tactical card game blending the strategic
+          depth of Gwent with the narrative soul of DnD.
+        </p>
+        <div class="lore-scroll observe-animate">
+          <p data-lang="project_lore">
+            In the forgotten corners of the realm, where the veil between worlds
+            thins, ancient forces stir once more. Whispers echo through ruined
+            spires, and cursed kings rise from their graves. You are not just a
+            player— you are a commander of fate in a world where every card
+            holds a secret, and every choice echoes in darkness.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="team" class="section observe-animate">
+      <h2 data-lang="team_title">Meet Our Team</h2>
+      <div class="card-grid">
+        <div class="card observe-animate">
+          <img src="img/avatar-artur.jpg" alt="Project Manager" />
+          <h3 data-lang="team_artur_name">Artur – Project Manager</h3>
+          <p data-lang="team_artur_desc">
+            Leads the vision, keeps the team aligned, and makes sure deadlines
+            don’t slip into the void
+          </p>
+        </div>
+        <div class="card observe-animate">
+          <img src="img/avatar-nastia.jpeg" alt="Frontend Developer" />
+          <h3 data-lang="team_nastia_name">Anastasia – Frontend Developer</h3>
+          <p data-lang="team_nastia_desc">
+            Creates sleek UI and interactive magic in React
+          </p>
+        </div>
+        <div class="card observe-animate">
+          <img src="img/avatar-artur.jpg" alt="Designer" />
+          <h3 data-lang="team_yulia_name">Yulia – Designer</h3>
+          <p data-lang="team_yulia_desc">
+            Shapes the visual soul of our worlds
+          </p>
+        </div>
+        <div class="card observe-animate">
+          <img src="img/avatar-artur.jpg" alt="Backend Developer" />
+          <h3 data-lang="team_andrii_name">Andrii – Backend Developer</h3>
+          <p data-lang="team_andrii_desc">
+            Architects stable systems and deep logic
+          </p>
+        </div>
+        <div class="card observe-animate">
+          <img src="img/avatar-artur.jpg" alt="QA Engineer" />
+          <h3 data-lang="team_yarik_name">Yaroslav – QA Engineer</h3>
+          <p data-lang="team_yarik_desc">
+            Crushes bugs and ensures polished gameplay
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-glow observe-animate">
+      <h2 data-lang="contact_title">Let’s Connect</h2>
+      <p data-lang="contact_text">
+        Have a vision, idea or question? Send us a whisper in the dark...
+      </p>
+      <form class="contact-form">
+        <input
+          type="text"
+          data-lang="contact_name_placeholder"
+          placeholder="Your Name"
+          required
+        />
+        <input
+          type="email"
+          data-lang="contact_email_placeholder"
+          placeholder="Your Email"
+          required
+        />
+        <textarea
+          rows="5"
+          data-lang="contact_message_placeholder"
+          placeholder="Your Message..."
+          required
+        ></textarea>
+        <button type="submit" data-lang="contact_btn">Send Message</button>
+      </form>
+      <div class="contact-orb"></div>
+    </section>
+
+    <footer class="observe-animate">
+      <p data-lang="footer_text">&copy; 2025 EchoWisp Studios</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
