@@ -197,10 +197,15 @@ body {
   transform: scale(1.05);
   box-shadow: 0 0 20px rgba(102, 51, 204, 0.4);
 }
+
 .card img {
-  width: 80px;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%; /* якщо хочеш круглі */
   margin-bottom: 1rem;
 }
+
 
 /* Slider */
 .slider-container {
